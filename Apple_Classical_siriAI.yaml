@@ -20,7 +20,6 @@ payload:
   - DOMAIN-SUFFIX,mask-h2.icloud.com
   - DOMAIN-SUFFIX,mask.icloud.com
   - DOMAIN-SUFFIX,apps.mzstatic.com
-
   - DOMAIN,apple-events.akamaized.net
   - DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
   - DOMAIN,appleworldwidedeveloper.sc.omtrdc.net
