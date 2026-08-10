@@ -6,8 +6,8 @@ payload:
   - DOMAIN,speedv6.m.jd.com
   - DOMAIN-SUFFIX,qualcomm.cn
   - DOMAIN,status-ipv6.jpush.cn
-  - DOMAIN,ipv6_cu.itdog.cn
-  - DOMAIN,ipv4_cu.itdog.cn
+  - DOMAIN-KEYWORD,ipv6_cu.itdog.cn
+  - DOMAIN-KEYWORD,ipv4_cu.itdog.cn
   - DOMAIN,appcloud2.in.zhihu.com
   - DOMAIN,httpdns.meituan.com
   - DOMAIN,apm.hexin.cn
