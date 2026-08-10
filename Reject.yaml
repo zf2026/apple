@@ -1,26 +1,25 @@
 #   # ios上自定义屏蔽
-payload:
-  - DOMAIN,dns.quad9.net
-  - DOMAIN-SUFFIX,agconnect.link
-  - DOMAIN,sealine.youku.com
-  - DOMAIN,speedv6.m.jd.com
-  - DOMAIN-SUFFIX,qualcomm.cn
-  - DOMAIN,status-ipv6.jpush.cn
-  - DOMAIN-KEYWORD,ipv6_cu.itdog.cn
-  - DOMAIN-KEYWORD,ipv4_cu.itdog.cn
-  - DOMAIN,appcloud2.in.zhihu.com
-  - DOMAIN,httpdns.meituan.com
-  - DOMAIN,apm.hexin.cn
-  - DOMAIN-SUFFIX,d.meituan.net
-  - DOMAIN-SUFFIX,ucdl.com.cn
-  - DOMAIN,cn-hangzhou.log.aliyuncs.com
-  - DOMAIN-KEYWORD,ajreport
-  - DOMAIN-SUFFIX,umengcloud.com
-  - DOMAIN-SUFFIX,umeng.com
-  - DOMAIN-SUFFIX,ppsimg.com
-  - DOMAIN,cmonitor.iqiyi.com
-  - DOMAIN-SUFFIX,iq.com
-  - DOMAIN,in.zhihu.com
-  - DOMAIN-SUFFIX,zhihu-cloud.com
-  - DOMAIN-SUFFIX,jddebug.com
-  - DOMAIN,msmp.abchina.com.cn
+DOMAIN,dns.quad9.net
+DOMAIN-SUFFIX,agconnect.link
+DOMAIN,sealine.youku.com
+DOMAIN,speedv6.m.jd.com
+DOMAIN-SUFFIX,qualcomm.cn
+DOMAIN,status-ipv6.jpush.cn
+DOMAIN-KEYWORD,ipv6_cu.itdog.cn
+DOMAIN-KEYWORD,ipv4_cu.itdog.cn
+DOMAIN,appcloud2.in.zhihu.com
+DOMAIN,httpdns.meituan.com
+DOMAIN,apm.hexin.cn
+DOMAIN-SUFFIX,d.meituan.net
+DOMAIN-SUFFIX,ucdl.com.cn
+DOMAIN,cn-hangzhou.log.aliyuncs.com
+DOMAIN-KEYWORD,ajreport
+DOMAIN-SUFFIX,umengcloud.com
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,ppsimg.com
+DOMAIN,cmonitor.iqiyi.com
+DOMAIN-SUFFIX,iq.com
+DOMAIN,in.zhihu.com
+DOMAIN-SUFFIX,zhihu-cloud.com
+DOMAIN-SUFFIX,jddebug.com
+DOMAIN,msmp.abchina.com.cn
