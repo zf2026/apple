@@ -1,6 +1,6 @@
-name: '京东综合去广告 · Zika'
+name: '京东综合去广告 · ZF'
 desc: '移除京东 App 已确认的广告、开屏及营销请求，尽量避免影响正常功能'
-author: 'zika'
+author: 'ZF'
 icon: 'https://raw.githubusercontent.com/NobyDa/mini/master/Color/jd.png'
 category: '去广告'
 
