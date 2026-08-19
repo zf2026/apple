@@ -1,29 +1,32 @@
 # 内容全部来自互联网各路大神，仅整理学习自用！
 
-## STASH 配置中心
+# STASH 配置中心
 
 Stash 配置、复写、规则集与网络检测工具集合。
 
-## STASH 配置文件
+# STASH 配置文件
 
 📄 [配置文件](https://github.com/zf2026/stash/tree/main/PZ
 )
 
 
-### 🚫 去广告覆写
+# 🚫 去广告覆写
 
 [去广告](https://github.com/zf2026/stash/tree/main/AD
 )
 
-### ⬇️ 远程规则集
+# ⬇️ 远程规则集
 
 [远程规则集](https://github.com/zf2026/stash/tree/main/rule
 )
 
-### 🌐 网络检测
+# 🌐 网络检测
 
 - 🧠 **DNS 泄漏**
   - [DNS Leak Test](https://dnsleaktest.com/)
+ 
+- 🧠 **DNS 泄漏**
+  - [DNS Leak Test2](https://dnscheck.tools)
 
 - 🛡️ **WebRTC 泄漏**
   - [BrowserLeaks WebRTC Test](https://browserleaks.com/webrtc)
@@ -31,6 +34,7 @@ Stash 配置、复写、规则集与网络检测工具集合。
 本项目尽量只显示实际请求、实际检测以及实际存在的数据。
 
 DNS 查询成功 ≠ DNS 无泄漏
+
 WebRTC 服务可访问 ≠ WebRTC 无泄漏
 
 因此 DNS 和 WebRTC 检测项目均保留「手动检测」方式，用于进行真正的泄漏检测。
