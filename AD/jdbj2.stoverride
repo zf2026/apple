@@ -1,0 +1,34 @@
+name: |-
+  京东比价
+desc: |-
+  京东App历史价格（商品详情页面触发）表格
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1053.png
+arguments-desc: |-
+  [参数设置]\n1. MMMCK_SCRIPT:慢慢买CK 脚本前往慢慢买App获取Cookie\n2.避免不必要的重写，禁用请设置为"#"
+
+http:
+
+  mitm:
+    - "in.m.jd.com"
+    - "apapia-sqk-weblogic.manmanbuy.com"
+
+  script:
+    - match: ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$
+      name: "慢慢买CK_5"
+      type: request
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+    - match: ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html
+      name: "慢慢买CK_5"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+script-providers:
+  "慢慢买CK_5":
+    url: https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+    interval: 86400
