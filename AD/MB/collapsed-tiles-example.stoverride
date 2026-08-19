@@ -3,7 +3,7 @@ name: Collapsed Tiles Example
 tiles:
   - name: ChatGPT-Web-Check
     title: ChatGPT Web
-    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/chatgpt.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
     collapsed: true
     url: https://chatgpt.com
   - name: ChatGPT-App-Check
