@@ -5,18 +5,18 @@ Stash 配置、覆写、规则集与网络检测工具集合。
 
 - **STASH 配置文件**
 
--  [配置文件](https://github.com/zf2026/stash/tree/main/PZ
+  -  [配置文件](https://github.com/zf2026/stash/tree/main/PZ
 )
 
 -  **🚫 覆写**
 
-- [去广告覆写](https://github.com/zf2026/stash/tree/main/AD
+  - [去广告覆写](https://github.com/zf2026/stash/tree/main/AD
 )
-- [面板覆写](https://github.com/zf2026/stash/tree/main/MB
+  - [面板覆写](https://github.com/zf2026/stash/tree/main/MB
 )
 - **⬇️ 远程规则集**
 
-- [远程规则集](https://github.com/zf2026/stash/tree/main/rule
+  - [远程规则集](https://github.com/zf2026/stash/tree/main/rule
 )
 
 - **🌐 网络检测**
