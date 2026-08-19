@@ -1,0 +1,24 @@
+name: |-
+  wenzhenpaipan
+desc: |-
+  wenzhenpaipan
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1006.png
+
+http:
+
+  mitm:
+    - "bzpp2.iwzbz.com"
+
+  script:
+    - match: ^https?:\/\/bzpp2\.iwzbz\.com\/api\/.+\/(user\/getvipinfo|User\/getWXPW)
+      name: "wenzhenpaipan_8"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+script-providers:
+  "wenzhenpaipan_8":
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenpaipan.js
+    interval: 86400
