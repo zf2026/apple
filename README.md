@@ -1,21 +1,21 @@
-内容全部来自互联网各路大神，仅整理学习自用！
+- 内容全部来自互联网各路大神，仅整理学习自用！
 
 # STASH 配置中心
 Stash 配置、覆写、规则集与网络检测工具集合。
 
 - **STASH 配置文件**
 
- [配置文件](https://github.com/zf2026/stash/tree/main/PZ
+-  [配置文件](https://github.com/zf2026/stash/tree/main/PZ
 )
 
 -  **🚫 覆写**
 
-[覆写](https://github.com/zf2026/stash/tree/main/AD
+- [覆写](https://github.com/zf2026/stash/tree/main/AD
 )
 
 - **⬇️ 远程规则集**
 
-[远程规则集](https://github.com/zf2026/stash/tree/main/rule
+- [远程规则集](https://github.com/zf2026/stash/tree/main/rule
 )
 
 - **🌐 网络检测**
