@@ -2,7 +2,8 @@ name: |-
   Youtube (Music) Enhance
 desc: |-
   适用于 Youtube & Youtube Music
-icon: |-https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1022.png
 arguments-desc: |-
   - 屏蔽参数：[true, false] \n- 翻译参数：[语言代码, off] \n\n1. 语言代码遵循 Google Translate Languages Codes, 当填入 off 时关闭翻译\n2. 开启调试模式用于输出更多日志
 
