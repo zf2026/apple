@@ -1,6 +1,7 @@
 name: Collapsed Tiles Example
 icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
-desc: 第三方服务，通过IPPure.com展示是否原生IP。
+desc: >
+  第三方服务，通过IPPure.com展示。
 
 tiles:
   - name: IPPure-IP-Info
