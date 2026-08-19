@@ -1,7 +1,7 @@
 name: |-
-  Spotify(>=iOS15)
+  Spotify(<9.1.14)
 desc: |-
-  2026.08.17 版本号9.1.14.877及以下有效，部分解锁premium,音质不能设置为超高(建议登录后再打开脚本,重启app等待脚本生效)
+  2026.08.17 (>=iOS15)版本号9.1.14.877及以下有效，部分解锁premium,音质不能设置为超高(建议登录后再打开脚本,重启app等待脚本生效)
 icon: |-
   https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
