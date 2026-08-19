@@ -1,0 +1,21 @@
+name: |-
+  粤语翻译神器
+desc: |-
+  粤语翻译神器
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1086.png
+
+http:
+
+  script:
+    - match: http://api.528529.com/apple_product/
+      name: "yyfysq_4"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+script-providers:
+  "yyfysq_4":
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/yyfysq.js
+    interval: 86400
