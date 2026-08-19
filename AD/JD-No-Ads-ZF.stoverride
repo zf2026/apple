@@ -1,19 +1,48 @@
-name: '京东综合去广告 · ZF'
-desc: '移除京东 App 已确认的广告、开屏及营销请求，尽量避免影响正常功能'
-author: 'ZF'
-icon: 'https://raw.githubusercontent.com/NobyDa/mini/master/Color/jd.png'
-category: '去广告'
+name: |-
+  京东去广告
+desc: |-
+  移除京东开屏广告，精简我的页面产品推广。
+author: |-
+  RuCu6[https://github.com/RuCu6], Maasea[https://github.com/Maasea]
+icon: |-
+  https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
+openUrl: |-
+  https://apps.apple.com/app/id414245413
+tag: |-
+  去广告
+loon_version: |-
+  3.4.0(962)
+homepage: |-
+  https://hub.kelee.one
+date: |-
+  2026-06-01 17:11:35
 
 http:
-  url-rewrite:
-    - ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start(?:&.*)?$ - reject
-    - ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=home_launchConfig(?:&.*)?$ - reject
-    - ^https?:\/\/lop-proxy\.jd\.com\/queryAppHomePageMarketingRecommendRuleConfigInfo(?:\?.*)?$ - reject
-    - ^https?:\/\/(?:bdsp-x|dsp-x)\.jd\.com\/adx\/.*$ - reject
 
-mitm:
-  host:
-    - api.m.jd.com
-    - lop-proxy.jd.com
-    - bdsp-x.jd.com
-    - dsp-x.jd.com
+  mitm:
+    - "api.m.jd.com"
+
+  url-rewrite:
+    - >-
+      ^http:\/\/\w{32}\.jddebug\.com\/diagnose\? - reject
+    - >-
+      ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) - reject-dict
+
+  body-rewrite:
+    - >-
+      ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=basicConfig response-jq if (getpath(["data","JDMessage","socketmonitor"]) | has("isSocketEstablishedAhead")) then (setpath(["data","JDMessage","socketmonitor","isSocketEstablishedAhead"]; 0)) else . end
+    - >-
+      ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=basicConfig response-jq if (getpath(["data","JDMessage","socketmonitor"]) | has("isSocketReport")) then (setpath(["data","JDMessage","socketmonitor","isSocketReport"]; 0)) else . end
+    - >-
+      ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=basicConfig response-jq if (getpath(["data","JDHttpToolKit","httpdns"]) | has("httpdns")) then (setpath(["data","JDHttpToolKit","httpdns","httpdns"]; 0)) else . end
+
+  script:
+    - match: ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome)
+      name: "移除京东广告_17"
+      type: response
+      require-body: true
+
+script-providers:
+  "移除京东广告_17":
+    url: https://kelee.one/Resource/JavaScript/JD/JD_remove_ads.js
+    interval: 86400
