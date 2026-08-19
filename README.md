@@ -1,7 +1,8 @@
 # Stash软件的自定义规则集及覆写，内容全部来自互联网各路大神，仅整理学习自用！
+
 ## STASH 配置中心
 
-Zika 自维护的 Stash 配置、复写、规则集与网络检测工具集合。
+Stash 配置、复写、规则集与网络检测工具集合。
 ## STASH 配置文件
 
 📄 [Default.yaml Raw](https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/PZ/Default.yaml)
@@ -21,38 +22,6 @@ Zika 自维护的 Stash 配置、复写、规则集与网络检测工具集合�
 - 🛡️ **WebRTC 泄漏**
   - [BrowserLeaks WebRTC Test](https://browserleaks.com/webrtc)
 
-
-
-⸻
-
-🧩 ZF 自维护原则
-
-* 自己维护
-* 自己测试
-* 不伪造检测结果
-* 不隐藏未知问题
-* 规则尽量针对实际请求编写
-* 保持 Stash 配置结构清晰
-
-⸻
-
-📌 更新记录
-
-2026
-
-持续更新：
-
-* Stash 配置
-* 去广告复写
-* 国内软件
-* DNS / WebRTC 检测
-* 网络连通性
-
-
-⸻
-
-⚠️ 面板真实性说明
-
 本项目尽量只显示实际请求、实际检测以及实际存在的数据。
 
 DNS 查询成功 ≠ DNS 无泄漏
@@ -65,7 +34,3 @@ WebRTC 服务可访问 ≠ WebRTC 无泄漏
 本项目用于 Stash 网络状态、连通性及泄漏检测辅助。
 
 检测结果受当前网络、节点、DNS 和目标服务器影响，仅代表检测时的实际状态。
-
-ZF Stash Config
-
-持续维护中........
