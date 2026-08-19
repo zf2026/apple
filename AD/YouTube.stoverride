@@ -1,48 +1,43 @@
 name: |-
-  Youtube (Music) Enhance
+  YouTube去广告隐藏Shorts版@Aioneas
 desc: |-
-  适用于 Youtube & Youtube Music
+  基于稳定版，额外去除首页Shorts，去除首页shorts区块，去除视频播内嵌购推荐卡
+author: |-
+  DivineEngine + app2smile + Maasea + ddgksf2013 + Aioneas + Oneasai + ZenmoFeiShi
 icon: |-
-  https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
-arguments-desc: |-
-  - 屏蔽参数：[true, false] \n- 翻译参数：[语言代码, off] \n\n1. 语言代码遵循 Google Translate Languages Codes, 当填入 off 时关闭翻译\n2. 开启调试模式用于输出更多日志
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1100.png
 
 http:
 
   mitm:
     - "*.googlevideo.com"
+    - "redirector*.googlevideo.com"
+    - "www.youtube.com"
+    - "s.youtube.com"
     - "youtubei.googleapis.com"
 
+  url-rewrite:
+    - >-
+      ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?&ctier=L(&.+?),ctier,(.+) https://$1$2$3 302
+    - >-
+      ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
+    - >-
+      ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
+    - >-
+      ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
+    - >-
+      ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+
   script:
-    - match: ^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch|log_event|config))(\?(.*))?$
-      name: "youtube.response_5"
+    - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)
+      name: "youtube.response_8"
       type: response
       require-body: true
       max-size: -1
       binary-mode: true
-      argument: |-
-        {"captionLang":"off","blockUpload":true,"blockImmersive":true,"blockShorts":false,"debug":false}
-
-    - match: ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&ack.*
-      name: "youtube.request.init_6"
-      type: request
-      require-body: true
-      max-size: -1
-      binary-mode: true
-      argument: |-
-        {"captionLang":"off"}
-
-    - match: ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event
-      name: "youtube.request.init_6"
-      type: request
-      require-body: true
-      max-size: -1
-      binary-mode: true
+      timeout: 60
 
 script-providers:
-  "youtube.response_5":
-    url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
-    interval: 86400
-  "youtube.request.init_6":
-    url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js
+  "youtube.response_8":
+    url: https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/youtube.response.js
     interval: 86400
