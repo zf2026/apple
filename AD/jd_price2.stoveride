@@ -3,7 +3,7 @@ name: |-
 desc: |-
   京东App历史价格（商品详情页面触发）表格
 icon: |-
-  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1053.png
+  https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/jd.png
 arguments-desc: |-
   [参数设置]\n1. MMMCK_SCRIPT:慢慢买CK 脚本前往慢慢买App获取Cookie\n2.避免不必要的重写，禁用请设置为"#"
 
