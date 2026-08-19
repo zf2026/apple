@@ -8,13 +8,15 @@ Stash 配置、复写、规则集与网络检测工具集合。
 📄 [Default.yaml Raw](https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/PZ/Default.yaml)
 
 
-### 🚫 去广告复写
+### 🚫 去广告覆写
 
 [去广告](https://github.com/zf2026/stash/tree/main/AD
 )
 
 ###  远程规则集
-(https://github.com/zf2026/stash/tree/main/rule)
+
+[远程规则集](https://github.com/zf2026/stash/tree/main/rule
+)
 
 ### 🌐 网络检测
 
