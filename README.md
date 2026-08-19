@@ -3,9 +3,11 @@
 ## STASH 配置中心
 
 Stash 配置、复写、规则集与网络检测工具集合。
+
 ## STASH 配置文件
 
-📄 [Default.yaml Raw](https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/PZ/Default.yaml)
+📄 [配置文件](https://github.com/zf2026/stash/tree/main/PZ
+)
 
 
 ### 🚫 去广告覆写
