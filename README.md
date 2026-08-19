@@ -13,7 +13,7 @@ Stash 配置、复写、规则集与网络检测工具集合。
 [去广告](https://github.com/zf2026/stash/tree/main/AD
 )
 
-###  远程规则集
+### ⬇️ 远程规则集
 
 [远程规则集](https://github.com/zf2026/stash/tree/main/rule
 )
