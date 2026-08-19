@@ -1,0 +1,24 @@
+name: |-
+  Xk
+desc: |-
+  Xk
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1076.png
+
+http:
+
+  mitm:
+    - "buy.itunes.apple.com"
+
+  script:
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      name: "Xk_2"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+script-providers:
+  "Xk_2":
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/Xk.js
+    interval: 86400
