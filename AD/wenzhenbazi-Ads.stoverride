@@ -1,0 +1,19 @@
+name: '问真八字'
+desc: ' wenzhenbazi'
+icon: 'https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1024.png'
+
+  mitm:
+    - "bzpp3.iwzbz.com"
+
+  script:
+    - match: ^https?:\/\/bzpp3\.iwzbz\.com\/api\/.+\/user\/getvipinfo
+      name: "wenzhenbazi_10"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+script-providers:
+  "wenzhenbazi_10":
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenbazi.js
+    interval: 86400
