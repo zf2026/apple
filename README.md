@@ -12,7 +12,7 @@ Stash 配置、覆写、规则集与网络检测工具集合。
 
 - [去广告覆写](https://github.com/zf2026/stash/tree/main/AD
 )
- [面板覆写](https://github.com/zf2026/stash/tree/main/MB
+- [面板覆写](https://github.com/zf2026/stash/tree/main/MB
 )
 - **⬇️ 远程规则集**
 
