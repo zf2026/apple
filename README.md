@@ -26,7 +26,7 @@ Stash 配置、复写、规则集与网络检测工具集合。
   - [DNS Leak Test](https://dnsleaktest.com/)
  
 - 🧠 **DNS 泄漏**
-  - [DNS Leak Test2](https://dnscheck.tools)
+  - [dnscheck](https://dnscheck.tools)
 
 - 🛡️ **WebRTC 泄漏**
   - [BrowserLeaks WebRTC Test](https://browserleaks.com/webrtc)
