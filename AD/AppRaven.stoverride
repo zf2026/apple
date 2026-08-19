@@ -1,0 +1,24 @@
+name: |-
+  AppRaven
+desc: |-
+  AppRaven
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1017.png
+
+http:
+
+  mitm:
+    - "appraven.net"
+
+  script:
+    - match: https://appraven.net/appraven/graphql
+      name: "AppRaven_2"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+script-providers:
+  "AppRaven_2":
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js
+    interval: 86400
