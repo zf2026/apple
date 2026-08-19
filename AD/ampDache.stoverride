@@ -1,0 +1,30 @@
+name: |-
+  ampDache
+desc: |-
+  ampDache
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1027.png
+
+http:
+
+  mitm:
+    - "*.amap.com"
+
+  script:
+    - match: ^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=)
+      name: "ampDache_16"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+cron:
+  script:
+    - name: "ampDache_16"
+      cron: 1 0 * * *
+      timeout: 120
+
+script-providers:
+  "ampDache_16":
+    url: https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js
+    interval: 86400
