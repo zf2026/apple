@@ -8,12 +8,7 @@ icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png
 openUrl: |-
   https://apps.apple.com/app/id736536022
-tag: |-
-  去广告
-system: |-
-  iOS, iPadOS
-system_version: |-
-  15
+category: "去广告"
 
 rules:
   - DOMAIN,api.biliapi.com,REJECT
