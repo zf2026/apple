@@ -6,8 +6,7 @@ icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/QQMusic.png
 openUrl: |-
   https://apps.apple.com/app/id414603431
-tag: |-
-  去广告
+category: "去广告"
 
 rules:
   - DOMAIN,adstats.tencentmusic.com,REJECT
