@@ -5,7 +5,7 @@ desc: |-
 icon: |-
   https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/jd.png
 arguments-desc: |-
-  [参数设置]\n1. MMMCK_SCRIPT:慢慢买CK 脚本前往慢慢买App获取Cookie\n2.避免不必要的重写，禁用请设置为"#"
+  [参数设置]\n1. MMMCK_SCRIPT:京东比价_168脚本前往慢慢买App获取Cookie\n2.避免不必要的重写，禁用请设置为"#"
 
 http:
 
@@ -15,20 +15,20 @@ http:
 
   script:
     - match: ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$
-      name: "慢慢买CK_168"
+      name: "京东比价_168"
       type: request
       require-body: true
       max-size: -1
       timeout: 60
 
     - match: ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html
-      name: "慢慢买CK_168"
+      name: "京东比价_168"
       type: response
       require-body: true
       max-size: -1
       timeout: 60
 
 script-providers:
-  "慢慢买CK_168":
+  "京东比价_168":
     url: https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
     interval: 86400
