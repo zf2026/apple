@@ -1,5 +1,6 @@
 name: Spotify解锁(>=iOS15)
 desc: 2025.06.27部分解锁premium,音质不能设置为超高(建议登录后再打开脚本,重启app等待脚本生效)
+category: "去广告"
 
 http:
   mitm:
