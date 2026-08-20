@@ -1,24 +1,21 @@
 name: |-
-  问真排盘
+  问真八字排盘
 desc: |-
-  问真排盘
+  问真八字排盘
 icon: |-
-  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1006.png
+  https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want_1.png
 category: "去广告"
 http:
-
   mitm:
-    - "bzpp2.iwzbz.com"
-
+    - "bzpp3.iwzbz.com"
   script:
-    - match: ^https?:\/\/bzpp2\.iwzbz\.com\/api\/.+\/(user\/getvipinfo|User\/getWXPW)
-      name: "wenzhenpaipan_8"
+    - match: ^https?:\/\/bzpp3\.iwzbz\.com\/api\/.+\/user\/getvipinfo
+      name: "wenzhenbazi_10"
       type: response
       require-body: true
       max-size: -1
       timeout: 60
-
 script-providers:
-  "wenzhenpaipan_8":
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenpaipan.js
+  "wenzhenbazi_10":
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenbazi.js
     interval: 86400
