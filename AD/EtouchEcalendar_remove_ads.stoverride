@@ -8,8 +8,7 @@ icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/EtouchEcalendar.png
 openUrl: |-
   https://apps.apple.com/app/id505424979
-tag: |-
-  去广告
+category: "去广告"
 
 rules:
   - DOMAIN,sdk.ad.sfys365.com,REJECT
