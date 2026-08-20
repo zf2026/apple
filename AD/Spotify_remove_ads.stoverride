@@ -8,8 +8,7 @@ icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spotify.png
 openUrl: |-
   https://apps.apple.com/app/id324684580
-tag: |-
-  去广告
+category: "去广告"
 
 rules:
   - AND,((DOMAIN-SUFFIX,spotify.com),(PROTOCOL,QUIC)),REJECT
