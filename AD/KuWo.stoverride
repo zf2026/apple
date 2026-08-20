@@ -5,14 +5,14 @@ desc: |-
 author: |-
   ddgksf2013
 icon: |-
-https://github.com/Moli-X/Resources/raw/main/Icon/Other/KuWo.png
+  https://github.com/Moli-X/Resources/raw/main/Icon/Other/KuWo.png
 homepage: |-
   https://github.com/Moli-X/Resources/raw/main/Loon/KuWo.plgin
 date: |-
   2024-05-16
 Edit: |-
   https://github.com/Moli-X/Resources/edit/main/Loon/KuWo.plgin
-category: "去广告"
+
 http:
 
   mitm:
