@@ -1,10 +1,10 @@
 name: |-
-  ampDache
+  ampDache签到
 desc: |-
-  ampDache
+  ampDache签到
 icon: |-
   https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/gaode.png
-
+category: "签到"
 http:
 
   mitm:
@@ -12,7 +12,7 @@ http:
 
   script:
     - match: ^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=)
-      name: "ampDache_16"
+      name: "ampDache_8"
       type: response
       require-body: true
       max-size: -1
@@ -20,11 +20,11 @@ http:
 
 cron:
   script:
-    - name: "ampDache_16"
+    - name: "ampDache_8"
       cron: 1 0 * * *
       timeout: 120
 
 script-providers:
-  "ampDache_16":
+  "ampDache_8":
     url: https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js
     interval: 86400
