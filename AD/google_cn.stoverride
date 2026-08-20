@@ -4,8 +4,7 @@ desc: |-
   将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
 icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Google.png
-tag: |-
-  去广告
+category: "去广告"
 
 http:
 
