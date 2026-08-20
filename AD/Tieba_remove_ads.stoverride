@@ -8,10 +8,7 @@ icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Tieba.png
 openUrl: |-
   https://apps.apple.com/app/id477927812
-tag: |-
-  去广告
-system_version: |-
-  15
+category: "去广告"
 
 rules:
   - DOMAIN,180.76.76.200,REJECT
