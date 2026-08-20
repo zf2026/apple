@@ -1,6 +1,7 @@
 #!desc=SoundCloudGo+
 name: SoundCloudGo+
 desc: SoundCloudGo+
+category: "去广告"
 http:
   mitm:
     - "api-mobile.soundcloud.com"
