@@ -1,10 +1,10 @@
 name: |-
-  wenzhenpaipan
+  问真排盘
 desc: |-
-  wenzhenpaipan
+  问真排盘
 icon: |-
   https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1006.png
-
+category: "去广告"
 http:
 
   mitm:
