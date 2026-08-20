@@ -1,0 +1,24 @@
+name: |-
+  wannianli
+desc: |-
+  wannianli
+icon: |-
+  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1083.png
+
+http:
+
+  mitm:
+    - "*.jiemengjia.com"
+
+  script:
+    - match: ^https?:\/\/.*\.jiemengjia\.com\/(member\/(member_info|pay_verify_new|create_order)|dialogue\/adspace)
+      name: "wannianli_9"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+script-providers:
+  "wannianli_9":
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wannianli.js
+    interval: 86400
