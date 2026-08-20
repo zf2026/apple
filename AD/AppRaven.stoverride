@@ -3,8 +3,9 @@ name: |-
 desc: |-
   AppRaven
 icon: |-
-  https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1017.png
+  https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/yanhua1.png
 category: "去广告"
+
 http:
 
   mitm:
