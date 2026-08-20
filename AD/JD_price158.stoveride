@@ -6,7 +6,7 @@ icon: |-
   https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/jd.png
 arguments-desc: |-
   [参数设置]\n1. MMMCK_SCRIPT:JD_158 脚本前往慢慢买App获取Cookie\n2.避免不必要的重写，禁用请设置为"#"
-category: "工具"
+category: "Tools"
 http:
 
   mitm:
