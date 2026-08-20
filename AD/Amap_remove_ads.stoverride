@@ -8,8 +8,7 @@ icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png
 openUrl: |-
   https://apps.apple.com/app/id461703208
-tag: |-
-  去广告
+category: "去广告"
 
 rules:
   - DOMAIN,amap-aos-info-nogw.amap.com,REJECT
