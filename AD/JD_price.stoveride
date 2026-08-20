@@ -15,20 +15,20 @@ http:
 
   script:
     - match: ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$
-      name: "慢慢买CK_5"
+      name: "慢慢买CK_168"
       type: request
       require-body: true
       max-size: -1
       timeout: 60
 
     - match: ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html
-      name: "慢慢买CK_5"
+      name: "慢慢买CK_168"
       type: response
       require-body: true
       max-size: -1
       timeout: 60
 
 script-providers:
-  "慢慢买CK_5":
+  "慢慢买CK_168":
     url: https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
     interval: 86400
