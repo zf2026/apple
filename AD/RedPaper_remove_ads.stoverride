@@ -8,8 +8,7 @@ icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RedPaper.png
 openUrl: |-
   https://apps.apple.com/app/id741292507
-tag: |-
-  去广告
+category: "去广告"
 
 rules:
   - AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
