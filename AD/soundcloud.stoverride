@@ -1,7 +1,7 @@
 #!desc=SoundCloudGo+
 name: SoundCloudGo+
 desc: SoundCloudGo+
-icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Unlock.png
+icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/VIP.png
 category: "去广告"
 http:
   mitm:
