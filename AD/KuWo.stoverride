@@ -1,0 +1,97 @@
+name: |-
+  酷我音乐/酷我畅听
+desc: |-
+  全功能破解酷我音乐&酷我畅听&去广告
+author: |-
+  ddgksf2013
+icon: |-
+  https://github.com/Moli-X/Resources/raw/main/Icon/Other/KuWo.png
+homepage: |-
+  https://github.com/Moli-X/Resources/raw/main/Loon/KuWo.plgin
+date: |-
+  2024-05-16
+Edit: |-
+  https://github.com/Moli-X/Resources/edit/main/Loon/KuWo.plgin
+
+http:
+
+  mitm:
+    - "*.kuwo.cn"
+
+  url-rewrite:
+# 酷我音乐_通用广告请求
+    - >-
+      https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay - reject-200
+#  酷我音乐_屏蔽热词
+    - >-
+      https?:\/\/hotword\.kuwo\.cn\/hotword\.s - reject-dict
+#  酷我音乐_通用广告请求
+    - >-
+      https?:\/\/vip1\.kuwo\.cn\/vip_adv\/ - reject-dict
+#  酷我音乐_通用广告请求
+    - >-
+      https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert - reject-200
+#  酷我音乐_应用内弹窗及右下角
+    - >-
+      ^https?:\/\/mobilead\.kuwo\.cn\/ - reject-200
+#  酷我音乐_开屏广告
+    - >-
+      https?:\/\/rich\.kuwo\.cn\/AdService - reject-200
+
+  script:
+# 全功能破解酷我音乐&酷我畅听
+    - match: ^(?!.*img).*?kuwo\.cn(/vip|/openapi)?(/enc|/audi.tion|/v[\d]/(user/vip\?(vers|apiVersion|platform|op\=ui|_t)|theme\?op=gd|sysinfo\?op=getRePayAndDoPayBoxNew|api(/pay)?/((user/personal/)?user/info|payInfo/kwplayer/payMiniBar|advert/(myPage|iListen|album))|album/(adBar|myRec/vipMusic))|/kuwopay/vip-tab/setting|/(audioApi/)?a\.p($|\?op\=getvip|.*?ptype\=vip)|/mobi\.s\?f\=kwxs|/music\.pay\?newver\=3$|/(EcomResource|(Mobile)?Ad)Serv(er|ice))
+      name: "酷我音乐_29"
+      type: response
+      require-body: true
+      timeout: 60
+
+#  酷我音乐_搜索框处理
+    - match: https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s
+      name: "kuwomusic_30_31"
+      type: response
+      require-body: true
+      timeout: 60
+
+#  酷我音乐_去除首页轮播广告和tips
+    - match: https?:\/\/mgxhtj\.kuwo\.cn\/mgxh\.s
+      name: "kuwomusic_30_31"
+      type: response
+      require-body: true
+      timeout: 60
+
+# 酷我音乐_去除会员页广告
+    - match: https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells
+      name: "kuwomusic_30_31"
+      type: response
+      require-body: true
+      timeout: 60
+
+#  酷我音乐_去除会员页顶部广告tab
+    - match: https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting
+      name: "kuwomusic_30_31"
+      type: response
+      require-body: true
+      timeout: 60
+
+#  酷我音乐_数字专辑
+    - match: ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver
+      name: "kuwomusic_30_31"
+      type: response
+      require-body: true
+      timeout: 60
+
+#  酷我音乐_皮肤解锁
+    - match: ^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme
+      name: "kuwomusic_30_31"
+      type: response
+      require-body: true
+      timeout: 60
+
+script-providers:
+  "酷我音乐_29":
+    url: https://github.com/Moli-X/Resources/raw/main/Script/Kuwo.js
+    interval: 86400
+  "kuwomusic_30_31":
+    url: https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
+    interval: 86400
