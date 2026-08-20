@@ -27,7 +27,7 @@ http:
 
   script:
     - match: ^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/(?:bootstrap|user-customization-service)
-      name: "Protobuf处理_20"
+      name: "Protobuf处理_8"
       type: response
       require-body: true
       binary-mode: true
@@ -36,5 +36,5 @@ http:
         [ false, true]
 
 script-providers:
-  "Protobuf处理_20":
+  "Protobuf处理_8":
     url: https://kelee.one/Resource/JavaScript/Spotify/Spotify_remove_ads.js
