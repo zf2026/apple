@@ -6,8 +6,7 @@ icon: |-
   https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spotify.png
 openUrl: |-
   https://apps.apple.com/app/id324684580
-tag: |-
-  功能增强
+category: "Tools"
 
 http:
 
