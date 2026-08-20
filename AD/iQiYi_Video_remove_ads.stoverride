@@ -18,12 +18,14 @@ http:
     - "-i.vip.iqiyi.com"
     - "*.iqiyi.com"
 
+  url-rewrite:
+    - ^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\? reject
+    - ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\? reject
+    - ^https?:\/\/iface2\.iqiyi\.com\/ivos\/interact\/video\/data\? reject
+    - ^https?:\/\/iface2\.iqiyi\.com\/video\/3\.0\/v_interface_proxy\? reject
+    - ^https?:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\? reject
+
   body-rewrite:
-    - ^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\? response-jq '{}'
-    - ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\? response-jq '{}'
-    - ^https?:\/\/iface2\.iqiyi\.com\/ivos\/interact\/video\/data\? response-jq '{}'
-    - ^https?:\/\/iface2\.iqiyi\.com\/video\/3\.0\/v_interface_proxy\? response-jq '{}'
-    - ^https?:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\? response-jq '{}'
     - ^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-jq delpaths([["base","statistics"]])
     - ^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-jq del(.cards[] | select(.alias_name == "focus" or .alias_name == "ad_mobile_flow" or .alias_name == "ad_trueview"))
     - ^https:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/category_home\? response-jq del(.base.statistics | select(.ad_str)) | del(.cards[] | select(.alias_name == "entrence_focus" or .alias_name == "ad_trueview"))
