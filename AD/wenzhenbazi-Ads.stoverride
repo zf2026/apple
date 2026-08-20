@@ -1,9 +1,10 @@
 name: |-
-  wenzhenbazi
+  问真八字
 desc: |-
-  wenzhenbazi
+  问真八字
 icon: |-
   https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1053.png
+category: "去广告"
 http:
   mitm:
     - "bzpp3.iwzbz.com"
