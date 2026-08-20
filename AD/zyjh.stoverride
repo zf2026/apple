@@ -1,0 +1,24 @@
+name: |-
+  中医精华
+desc: |-
+  中医精华人体穴位
+icon: |-
+  https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/VIP.png
+
+http:
+
+  mitm:
+    - "buy.itunes.apple.com"
+
+  script:
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      name: "zyjh_3"
+      type: response
+      require-body: true
+      max-size: -1
+      timeout: 60
+
+script-providers:
+  "zyjh_3":
+    url: https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/zyjh.js
+    interval: 86400
