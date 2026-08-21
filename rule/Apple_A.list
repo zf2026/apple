@@ -1,4 +1,13 @@
-# NAME: Apple
+# NAME: Apple Remote Rule Set (Categorized)
+
+# 1. 基础服务与通用域名 (Apple Core)
+DOMAIN,guzzoni.apple.com
+DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask-t.apple-dns.net
+DOMAIN,mask.apple-dns.net
+DOMAIN,apple-events.akamaized.net
+DOMAIN,doh.dns.apple.com
 DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,apple-mapkit.com
 DOMAIN-SUFFIX,apple.co
@@ -54,8 +63,6 @@ DOMAIN-SUFFIX,darwinsourcecode.com
 DOMAIN-SUFFIX,icloud-apple.cn
 DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,icloud-isupport.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,ids-apple.com
 DOMAIN-SUFFIX,ios-icloud.com
 DOMAIN-SUFFIX,itunes-apple.cn
@@ -66,79 +73,16 @@ DOMAIN-SUFFIX,myappleid.com
 DOMAIN-SUFFIX,myicloud.net
 DOMAIN-SUFFIX,mylcloud.net
 DOMAIN-SUFFIX,tvappstore.net
-DOMAIN-SUFFIX,apple-store.cn
-DOMAIN-SUFFIX,apple-store.net
-DOMAIN-SUFFIX,apple-store.wang
-DOMAIN-SUFFIX,applestor.com
-DOMAIN-SUFFIX,applestore.com
-DOMAIN-SUFFIX,applestore.wang
-DOMAIN-SUFFIX,applestoreonline.com
-DOMAIN-SUFFIX,applestorepro.eu
-DOMAIN-SUFFIX,applewatch.hk
-DOMAIN-SUFFIX,applewatch.tv
-DOMAIN-SUFFIX,applewatch.tw
-DOMAIN-SUFFIX,applewatch.wang
-DOMAIN-SUFFIX,applewatchedition.com
-DOMAIN-SUFFIX,applewatchseries3.net
-DOMAIN-SUFFIX,applewatchsport.com
-DOMAIN-SUFFIX,bestiphonestuff.com
-DOMAIN-SUFFIX,cooliphonecasesstore.com
-DOMAIN-SUFFIX,custom-iphonecase.com
-DOMAIN-SUFFIX,designeriphonescases.com
-DOMAIN-SUFFIX,dl-iphone.com
-DOMAIN-SUFFIX,downloadsforipod.com
-DOMAIN-SUFFIX,ebookforipad.com
-DOMAIN-SUFFIX,euroipad.com
-DOMAIN-SUFFIX,findmyipad.com
-DOMAIN-SUFFIX,imac.com
-DOMAIN-SUFFIX,offrezdesipods.com
-DOMAIN-SUFFIX,onlineapplestore.com
-DOMAIN-SUFFIX,onlyiphone5case.com
-DOMAIN-SUFFIX,simplyipod.com
-DOMAIN-SUFFIX,ukipad.com
-DOMAIN-SUFFIX,wwwipodlounge.com
-DOMAIN-SUFFIX,wwwmacbookair.com
-DOMAIN-SUFFIX,apple.comscoreresearch.com
-DOMAIN-SUFFIX,appleenews.com
-DOMAIN-SUFFIX,applemusic.com
-DOMAIN-SUFFIX,applenews.berlin
-DOMAIN-SUFFIX,applenews.hamburg
-DOMAIN-SUFFIX,applenews.tv
-DOMAIN-SUFFIX,applenewsformat.com
-DOMAIN-SUFFIX,appletv.com
-DOMAIN-SUFFIX,appletv.wang
-DOMAIN-SUFFIX,appletv4.cn
-DOMAIN-SUFFIX,appletv4.com.cn
-DOMAIN-SUFFIX,appletvapp.apple
-DOMAIN-SUFFIX,i-book.com
-DOMAIN-SUFFIX,i-book.net
-DOMAIN-SUFFIX,ibook.co.nz
-DOMAIN-SUFFIX,ibook.com
-DOMAIN-SUFFIX,ibook.eu
-DOMAIN-SUFFIX,ibook.net
-DOMAIN-SUFFIX,ibookpartner.com
-DOMAIN-SUFFIX,ibooksauthor.com
-DOMAIN-SUFFIX,imovie.eu
-DOMAIN-SUFFIX,imoviegallery.com
-DOMAIN-SUFFIX,imoviestage.com
-DOMAIN-SUFFIX,iphoto.eu
-DOMAIN-SUFFIX,iphoto.no
-DOMAIN-SUFFIX,iphoto.se
-DOMAIN-SUFFIX,iphoto.wang
-DOMAIN-SUFFIX,musickit.net
-DOMAIN-SUFFIX,wwwapplemusic.com
-DOMAIN-SUFFIX,apple.news
 DOMAIN-SUFFIX,apple-dns.net
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-livephotoskit.com
 DOMAIN-SUFFIX,apzones.com
 DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,apple-relay.cloudflare.com
-DOMAIN-SUFFIX,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,cp4.cloudflare.com
-DOMAIN-SUFFIX,ohttp-relay1.fastly-edge.com
-# NAME: iCloud
+
+# 2. iCloud 服务 (iCloud)
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,appleicloud.cn
 DOMAIN-SUFFIX,icloudads.net
 DOMAIN-SUFFIX,icloudapple.cn
@@ -158,9 +102,11 @@ DOMAIN-SUFFIX,icloudpay.net
 DOMAIN-SUFFIX,icloudsecure.net
 DOMAIN-SUFFIX,icloudsetup.com
 DOMAIN-SUFFIX,mwcname.com
-# NAME: AppleProxy
+
+# 3. 快捷方式与代理 (Apple Proxy)
 DOMAIN-SUFFIX,appsto.re
-# NAME: AppleDev
+
+# 4. 开发者与开源项目 (AppleDev)
 DOMAIN-SUFFIX,appleswift.com
 DOMAIN-SUFFIX,appleworldwidedeveloper.hb-api.omtrdc.net
 DOMAIN-SUFFIX,appleworldwidedeveloper.sc.omtrdc.net
@@ -187,7 +133,8 @@ DOMAIN-SUFFIX,webkit.org
 DOMAIN-SUFFIX,webkitgtk.org
 DOMAIN-SUFFIX,webobjects.com
 DOMAIN-SUFFIX,wpewebkit.org
-# NAME: AppleFirmware
+
+# 5. 商店、支付与固件服务 (AppleFirmware / Store)
 DOMAIN-SUFFIX,apple-pay.rs
 DOMAIN-SUFFIX,apple-pay.wang
 DOMAIN-SUFFIX,applepay.berlin
@@ -240,8 +187,41 @@ DOMAIN-SUFFIX,itunesstore.co
 DOMAIN-SUFFIX,itunesu.com
 DOMAIN-SUFFIX,itunesu.net
 DOMAIN-SUFFIX,iutunes.com
-# NAME: AppleHardware
+
+# 6. 硬件与周边域名 (AppleHardware)
+DOMAIN-SUFFIX,apple-store.cn
+DOMAIN-SUFFIX,apple-store.net
+DOMAIN-SUFFIX,apple-store.wang
 DOMAIN-SUFFIX,aplestore.com
+DOMAIN-SUFFIX,applestor.com
+DOMAIN-SUFFIX,applestore.com
+DOMAIN-SUFFIX,applestore.wang
+DOMAIN-SUFFIX,applestoreonline.com
+DOMAIN-SUFFIX,applestorepro.eu
+DOMAIN-SUFFIX,applewatch.hk
+DOMAIN-SUFFIX,applewatch.tv
+DOMAIN-SUFFIX,applewatch.tw
+DOMAIN-SUFFIX,applewatch.wang
+DOMAIN-SUFFIX,applewatchedition.com
+DOMAIN-SUFFIX,applewatchseries3.net
+DOMAIN-SUFFIX,applewatchsport.com
+DOMAIN-SUFFIX,bestiphonestuff.com
+DOMAIN-SUFFIX,cooliphonecasesstore.com
+DOMAIN-SUFFIX,custom-iphonecase.com
+DOMAIN-SUFFIX,designeriphonescases.com
+DOMAIN-SUFFIX,dl-iphone.com
+DOMAIN-SUFFIX,downloadsforipod.com
+DOMAIN-SUFFIX,ebookforipad.com
+DOMAIN-SUFFIX,euroipad.com
+DOMAIN-SUFFIX,findmyipad.com
+DOMAIN-SUFFIX,imac.com
+DOMAIN-SUFFIX,offrezdesipods.com
+DOMAIN-SUFFIX,onlineapplestore.com
+DOMAIN-SUFFIX,onlyiphone5case.com
+DOMAIN-SUFFIX,simplyipod.com
+DOMAIN-SUFFIX,ukipad.com
+DOMAIN-SUFFIX,wwwipodlounge.com
+DOMAIN-SUFFIX,wwwmacbookair.com
 DOMAIN-SUFFIX,aplleipods.com
 DOMAIN-SUFFIX,apple-imac.com
 DOMAIN-SUFFIX,apple-watch.com.ru
@@ -314,39 +294,42 @@ DOMAIN-SUFFIX,macbookpro.us
 DOMAIN-SUFFIX,macbookpros.com
 DOMAIN-SUFFIX,macbooksale.com
 DOMAIN-SUFFIX,myipod.net
-IP-CIDR6,2403:300::/32,no-resolve
-IP-CIDR6,2620:149::/32,no-resolve
-IP-CIDR6,2a01:b740::/32,no-resolve
-IP-CIDR,17.249.0.0/16,no-resolve
-IP-CIDR,17.252.0.0/16,no-resolve
-IP-CIDR,17.57.144.0/22,no-resolve
-IP-CIDR,17.188.128.0/18,no-resolve
-IP-CIDR,17.188.20.0/23,no-resolve
 
-# NAME: AppleMedia
+# 7. 媒体与内容 (AppleMedia)
+DOMAIN-SUFFIX,apple.comscoreresearch.com
+DOMAIN-SUFFIX,appleenews.com
+DOMAIN-SUFFIX,applemusic.com
+DOMAIN-SUFFIX,applenews.berlin
+DOMAIN-SUFFIX,applenews.hamburg
+DOMAIN-SUFFIX,applenews.tv
+DOMAIN-SUFFIX,applenewsformat.com
+DOMAIN-SUFFIX,appletv.com
+DOMAIN-SUFFIX,appletv.wang
+DOMAIN-SUFFIX,appletv4.cn
+DOMAIN-SUFFIX,appletv4.com.cn
+DOMAIN-SUFFIX,appletvapp.apple
+DOMAIN-SUFFIX,i-book.com
+DOMAIN-SUFFIX,i-book.net
+DOMAIN-SUFFIX,ibook.co.nz
+DOMAIN-SUFFIX,ibook.com
+DOMAIN-SUFFIX,ibook.eu
+DOMAIN-SUFFIX,ibook.net
+DOMAIN-SUFFIX,ibookpartner.com
+DOMAIN-SUFFIX,ibooksauthor.com
+DOMAIN-SUFFIX,imovie.eu
+DOMAIN-SUFFIX,imoviegallery.com
+DOMAIN-SUFFIX,imoviestage.com
+DOMAIN-SUFFIX,iphoto.eu
+DOMAIN-SUFFIX,iphoto.no
+DOMAIN-SUFFIX,iphoto.se
+DOMAIN-SUFFIX,iphoto.wang
+DOMAIN-SUFFIX,musickit.net
+DOMAIN-SUFFIX,wwwapplemusic.com
+DOMAIN-SUFFIX,apple.news
 DOMAIN-SUFFIX,applemusic.berlin
-DOMAIN-SUFFIX,applemusic.co
 DOMAIN-SUFFIX,appletv.fr
-DOMAIN-KEYWORD,applestore
-DOMAIN-KEYWORD,itunes
-DOMAIN-KEYWORD,icloud
-DOMAIN-KEYWORD,iphoto
-DOMAIN-KEYWORD,apple-support.akadns.net
-DOMAIN-KEYWORD,apple.com.akadns.net
-DOMAIN-KEYWORD,buy.itunes.apple.com
-DOMAIN-KEYWORD,smp-device
-DOMAIN-KEYWORD,apple.com.edgekey.net
-DOMAIN-KEYWORD,testflight
 
-# Apple Intelligence/Siri/Relay rules.
-# == Apple苹果智能 & 活动流媒体 & DNS ==
-DOMAIN,guzzoni.apple.com
-DOMAIN,mask-api.fe.apple-dns.net
-DOMAIN,mask-api.icloud.com
-DOMAIN,mask-t.apple-dns.net
-DOMAIN,mask.apple-dns.net
-DOMAIN,apple-events.akamaized.net
-DOMAIN,doh.dns.apple.com
+# 8. Apple Intelligence / Siri / Private Relay / DNS
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
@@ -360,3 +343,26 @@ DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-SUFFIX,mask-h2.icloud.com
 DOMAIN-SUFFIX,mask.icloud.com
 DOMAIN-SUFFIX,apps.mzstatic.com
+DOMAIN-SUFFIX,ohttp-relay1.fastly-edge.com
+
+# 9. 关键字匹配 (DOMAIN-KEYWORD)
+DOMAIN-KEYWORD,applestore
+DOMAIN-KEYWORD,itunes
+DOMAIN-KEYWORD,icloud
+DOMAIN-KEYWORD,iphoto
+DOMAIN-KEYWORD,apple-support.akadns.net
+DOMAIN-KEYWORD,apple.com.akadns.net
+DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-KEYWORD,smp-device
+DOMAIN-KEYWORD,apple.com.edgekey.net
+DOMAIN-KEYWORD,testflight
+
+# 10. IP 网段 (IP-CIDR)
+IP-CIDR,17.249.0.0/16,no-resolve
+IP-CIDR,17.252.0.0/16,no-resolve
+IP-CIDR,17.57.144.0/22,no-resolve
+IP-CIDR,17.188.128.0/18,no-resolve
+IP-CIDR,17.188.20.0/23,no-resolve
+IP-CIDR6,2403:300::/32,no-resolve
+IP-CIDR6,2620:149::/32,no-resolve
+IP-CIDR6,2a01:b740::/32,no-resolve
