@@ -1,5 +1,4 @@
 # Apple Intelligence/Siri/Relay rules
-# Route these domains to a supported-region proxy group, such as a US node.
 # == Apple苹果智能 & 活动流媒体 & DNS ==
 DOMAIN,guzzoni.apple.com
 DOMAIN,mask-api.fe.apple-dns.net
