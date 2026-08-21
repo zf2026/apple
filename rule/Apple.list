@@ -322,10 +322,7 @@ IP-CIDR,17.252.0.0/16,no-resolve
 IP-CIDR,17.57.144.0/22,no-resolve
 IP-CIDR,17.188.128.0/18,no-resolve
 IP-CIDR,17.188.20.0/23,no-resolve
-IP-CIDR6,2620:149:a44::/48,no-resolve
-IP-CIDR6,2403:300:a42::/48,no-resolve
-IP-CIDR6,2403:300:a51::/48,no-resolve
-IP-CIDR6,2a01:b740:a42::/48,no-resolve
+
 # NAME: AppleMedia
 DOMAIN-SUFFIX,applemusic.berlin
 DOMAIN-SUFFIX,applemusic.co
@@ -340,8 +337,8 @@ DOMAIN-KEYWORD,buy.itunes.apple.com
 DOMAIN-KEYWORD,smp-device
 DOMAIN-KEYWORD,apple.com.edgekey.net
 DOMAIN-KEYWORD,testflight
-# Apple Intelligence/Siri/Relay rules
-# Route these domains to a supported-region proxy group, such as a US node.
+
+# Apple Intelligence/Siri/Relay rules.
 # == Apple苹果智能 & 活动流媒体 & DNS ==
 DOMAIN,guzzoni.apple.com
 DOMAIN,mask-api.fe.apple-dns.net
