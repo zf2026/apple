@@ -3,7 +3,7 @@
 自动签到 地图APP/微信小程序、支付宝小程序
 2024-06-27 重写代码
 2026-01-03 例行更新
-
+本内容来自：https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js
 测试 Quantumult-X, loon, Shadowsrocket, Surge(超时写长点例如200), node, 其他自测
 获取Cookie方法 ，QX开重写，进入【高德地图/微信/支付宝 小程序[高德打车]，打车，福利中心】，任意一端获取成功即可3端签到
 青龙/node 环境变量   GD_Val={"userId":"xx","adiu":"xx","sessionid":"xx"}
