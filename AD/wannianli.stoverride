@@ -21,5 +21,5 @@ http:
 
 script-providers:
   "wannianli_9":
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wannianli.js
+    url: https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/main/wannianli.js
     interval: 86400
