@@ -17,5 +17,5 @@ http:
 
 script-providers:
   "yyfysq_vip":
-    url: https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/yyfysq.js
+    url: https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/script/yyfysq.js
     interval: 86400
