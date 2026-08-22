@@ -25,7 +25,7 @@
 2025-05-16
 # 更新APP正常用，脚本风控的问题
 2025-07-10
-# ...
+# .脚本来自https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
 
 [rewrite_local]
 ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
