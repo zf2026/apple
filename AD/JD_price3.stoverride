@@ -1,5 +1,5 @@
 name: |-
-  京东比价8
+  京东比价
 desc: |-
   首次使用需安装慢慢买应用，之后点击进入[我的]页面以捕获Cookie，捕获成功后方可在商品详情页面查看比价内容。
 author: |- 
@@ -17,18 +17,18 @@ http:
 
   script:
     - match: ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$
-      name: "jd_price8"
+      name: "jd_price3"
       type: request
       require-body: true
       timeout: 10
 
     - match: ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html
-      name: "jd_price8"
+      name: "jd_price3"
       type: response
       require-body: true
       timeout: 10
 
 script-providers:
-  "jd_price8":
-    url: https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/script/jd_price8.js
+  "jd_price3":
+    url: https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/script/jd_price3.js
     interval: 86400
