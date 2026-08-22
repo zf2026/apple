@@ -4,7 +4,7 @@
  * 支持版本：App V15.0.80（自行测试）
  * 脚本作者：小白脸
  * 特别鸣谢：数据逆向@苍井灰灰
- 
+ * 脚本来自https://raw.githubusercontent.com/mw418/Loon/refs/heads/main/script/jd_price2.js
 [Script]
 慢慢买 CK = type=http-request,pattern=^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/MmmCK.js
 京东比价 = type=http-response,pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js,timeout=30
