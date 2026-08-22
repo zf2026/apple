@@ -20,5 +20,5 @@ http:
 
 script-providers:
   "jzzwds_9":
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/jzzwds.js
+    url: https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/script/jzzwds.js
     interval: 86400
