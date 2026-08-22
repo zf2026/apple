@@ -30,5 +30,5 @@ http:
 
 script-providers:
   "jd_price2":
-    url: https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/script/jd_price2.js
+    url: https://raw.githubusercontent.com/wf021325/qx/refs/heads/main/js/jd_price.js
     interval: 86400
