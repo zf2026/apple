@@ -17,5 +17,5 @@ http:
       timeout: 60
 script-providers:
   "wenzhenbazi_10":
-    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/wenzhenbazi.js
+    url: https://raw.githubusercontent.com/zf2026/stash/refs/heads/main/script/wenzhenbazi.js
     interval: 86400
