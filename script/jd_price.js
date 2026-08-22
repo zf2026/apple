@@ -1,12 +1,8 @@
 /*
-# 2024-09-16
-# 京东比价
-# 仅适用于京东App版本≤V12.4.3
-# 2024-12-22
-# 发现13.8.3又支持此脚本了
-# 脚本修改来源 https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
+# 13.8.3又支持此脚本了
 # 1. 修复比价接口
-# 2. 之前只能QX，Surge，更换为Env,兼容Loon等，仅测试QX
+# 2. 仅测试stash
+
 2025-01-04
 # 脚本抄袭来源 https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js
 # 1. 京东很奇怪，标题下面的比价时有时无  所以增加点击【详情】显示比价(显示在页内)
