@@ -1,7 +1,7 @@
 /* 
  * 粤语翻译神器
  * 会员优化
-
+ * 内容来自：https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/yyfysq.js
 [rewrite_local]
 http://api.528529.com/apple_product/ url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/yyfysq.js
 
